@@ -89,6 +89,12 @@ textarea{
 /*STYLE RESET EDN*/
 
 /*DEFAULT-CLASSES START*/
+.color-orng{
+    color:#ff5912;
+}
+.color-344{
+    color:#34404b;
+}
 .flex-container{
     display: -webkit-box;
     display: -webkit-flex;
@@ -129,4 +135,31 @@ textarea{
     margin-left: auto;
 }
 
+.bottom-header .header-nav a{
+    padding: 0 20px;
+    font: 16px "HarmoniaSansProCyr", sans-serif;
+}
+.bottom-header .header-nav a+a{
+    color:#34404b;
+}
+.user-controls a+a+a{
+    position: relative;
+}
+.bottom-header .user-controls span{
+    position: absolute;
+    color: white;
+}
+.bottom-header .user-controls span::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color:#34404b;
+}
+.bottom-header .user-controls a+a{
+    padding-left: 30px;
+}
 /*DEFAULT COMPONENT END*/
