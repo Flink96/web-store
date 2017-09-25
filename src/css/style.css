@@ -132,7 +132,7 @@ textarea{
 .bottom-header .header-nav a+a{
     color:#34404b;
 }
-.user-controls{
+.user-controls a{
     position: relative;
     display: inline-block;
 }
@@ -142,8 +142,8 @@ textarea{
     min-width: 18px;
     height: 18px;
     position: absolute;
-    top: -71%;
-    left: 91%;
+    top: -100%;
+    left:50%;
     transform: translateX(-50%);
     font-family:Harmonia_regular;
     color: #ffffff;
@@ -153,6 +153,6 @@ textarea{
     border-radius: 50%;
 }
 .bottom-header .user-controls a+a{
-    padding-left: 30px;
+    margin-left: 30px;
 }
 /*DEFAULT COMPONENT END*/
