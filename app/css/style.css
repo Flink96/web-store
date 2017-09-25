@@ -142,22 +142,28 @@ textarea{
 .bottom-header .header-nav a+a{
     color:#34404b;
 }
-.user-controls a+a+a{
+.user-controls{
     position: relative;
+    display: inline-block;
 }
 .bottom-header .user-controls span{
-    position: absolute;
-    color: white;
-}
-.bottom-header .user-controls span::before{
-    content: '';
-    display: block;
-    position: absolute;
-    width: 18px;
+    padding-top: 2px;
+    text-align: center;
+    min-width: 18px;
     height: 18px;
+    position: absolute;
+    top: -71%;
+    left: 91%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-family:Harmonia_regular;
+    color: #ffffff;
+    display: inline-block;
+    background-color: #34404b;
+    border: 1px solid #34404b;
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color:#34404b;
 }
 .bottom-header .user-controls a+a{
     padding-left: 30px;
