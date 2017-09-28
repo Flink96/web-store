@@ -249,13 +249,7 @@ textarea{
 .product-item .item-img img{
     max-height: 100%;
 }
-.title-content .sub-title{
-    font-family: 'Harmonia_regular';
-    font-size: 16px;
-    line-height: 1.88em;
-    color: rgba(73,86,98, .9);
-    margin-bottom: 80px;
-}
+
 /*DEFAULT COMPONENT END*/
 
 .sale-carousel{
@@ -374,4 +368,54 @@ textarea{
 }
 .new-arrivals .items-wrap{
     margin-bottom: 80px;
+    margin-top: 80px;
+}
+.two-blocks .title-content{
+    padding-right: 36px;
+    border-right: 1px solid #eaedef;
+}
+.default-content .title-content span{
+ display: block;
+}
+.default-content .title-content span{
+
+}
+.default-content .title-content .title{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.title-content .sub-title{
+    font-family: 'Harmonia_regular';
+    font-size: 16px;
+    line-height: 1.88em;
+    color: rgba(73,86,98, .9);
+}
+.two-blocks .title-content .sub-title {
+    font-size: 12px;
+    line-height: 2.5em;
+}
+.two-blocks .default-content .title-content,.price-content{
+    display: inline-block;
+}
+.two-blocks .default-content .price-content{
+    font-size: 32px;
+    font-family: 'Harmonia_black';
+    line-height: 67px;
+    padding-left: 36px;
+}
+.two-blocks .adv {
+    padding: 31px 0;
+    border: 1px solid #eaedef;
+}
+.two-blocks .adv span{
+    display: inline-block;
+    font-family: 'Harmonia_regular';
+    font-size: 16px;
+}
+.two-blocks .adv span+span+span{
+    font-size: 12px;
+    letter-spacing: 1.6vh;
+    margin-top: 17px;
+    color: rgba(52,64,75, .4);
+    display: block;
 }
