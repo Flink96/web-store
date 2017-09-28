@@ -64,7 +64,6 @@
 }
 body{
     margin: 0;
-    color: #111;
     font: 12px/1 "Harmonia_regular", sans-serif;
     background-color: #f4f6f8;
     color: #34404b;
@@ -444,6 +443,9 @@ textarea{
     font-family: 'Harmonia_regular';
     font-size: 16px;
 }
+.two-blocks .adv span+span{
+    color: #ff5912;
+}
 .two-blocks .adv span+span+span{
     font-size: 12px;
     letter-spacing: 1.6vh;
@@ -451,3 +453,30 @@ textarea{
     color: rgba(52,64,75, .4);
     display: block;
 }
+.best-sales .best-items{
+    overflow: hidden;
+    padding: 35px 25px;
+}
+.best-item-description{
+    display: inline-block;
+    font-family: 'Harmonia_bold';
+    padding-left: 26px;
+}
+.best-item-description .best-item-title {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+.best-item-price{
+    font-size: 16px;
+}
+.best-item-description ul li,ul,.best-item-price{
+    display: inline-block;
+}
+.best-item-description ul li:last-child{
+ color: #f4f6f8;
+}
+.best-item-img{
+    padding-right: 26px;
+    border-right: 1px solid #eaedef;
+}
+
