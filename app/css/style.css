@@ -82,6 +82,7 @@ a{
 }
 a:hover{
     color:#ff5912;
+    text-decoration: none;
 }
 img{
     max-width: 100%;
@@ -174,6 +175,24 @@ textarea{
     position: relative;
     display: inline-block;
 }
+.user-controls a i:hover{
+    background-position: -81px 0px;
+}
+.user-controls a+a i:hover{
+    background-position: 0px -59px;
+}
+.user-controls a+a+a i:hover{
+    background-position: -20px -59px;
+}
+.new-arrivals .more-info-on-hover .item-controls li a span:hover{
+    background-position: -44px -59px;
+}
+.new-arrivals .more-info-on-hover .item-controls li+li a span:hover{
+    background-position: -22px -38px;
+}
+.new-arrivals .more-info-on-hover .item-controls li+li+li a span:hover{
+    background-position: -38px -80px;
+}
 .bottom-header .user-controls span{
     padding-top: 2px;
     text-align: center;
@@ -245,6 +264,9 @@ textarea{
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
 }
+.product-item .item-title a:hover{
+    color: #34404b;
+}
 
 .product-item .colors{
     border-bottom: 1px solid #f2f4f7;
@@ -269,7 +291,9 @@ textarea{
 .product-item .item-img img{
     max-height: 100%;
 }
-
+.best-sales .row{
+    margin-top: 80px;
+}
 /*DEFAULT COMPONENT END*/
 
 .sale-carousel{
@@ -346,6 +370,9 @@ textarea{
 .product-item:hover .more-info-on-hover{
     opacity: 1;
     z-index: 99;
+}
+.product-item:hover a{
+    color: #34404b;
 }
 .product-item:hover .item-price{
     display: none;
@@ -469,7 +496,7 @@ textarea{
 .best-item-price{
     font-size: 16px;
 }
-.best-item-description ul li,ul,.best-item-price{
+.best-item-description ul li,.best-item-price{
     display: inline-block;
 }
 .best-item-description ul li:last-child{
@@ -479,4 +506,28 @@ textarea{
     padding-right: 26px;
     border-right: 1px solid #eaedef;
 }
-
+.best-items .best-item-description{
+    position: relative;
+}
+.info-on-hover{
+    opacity: 0;
+    position: absolute;
+    right: 20%;
+    top: 60%;
+}
+.info-on-hover .hover-add{
+    font-family: 'Harmonia_semibold';
+    font-size: 16px;
+}
+.best-items:hover .info-on-hover{
+    opacity: 1;
+}
+.best-items:hover ul{
+    opacity: 0;
+}
+.best-items:hover .best-item-price{
+    opacity: 0;
+}
+.best-item-title a:hover{
+    color: #34404b ;
+}
