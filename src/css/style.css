@@ -89,6 +89,16 @@ img{
 textarea{
     resize: vertical;
 }
+label{
+    margin: 0;
+}
+input,button,select{
+    border: none;
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
 /*STYLE RESET EDN*/
 
 /*DEFAULT-CLASSES START*/
@@ -113,7 +123,9 @@ textarea{
 .color-orng{
     color:#ff5912;
 }
-
+.color-gray{
+    color: #f4f6f8;
+}
 .flex-container{
     display: flex;
 }
@@ -272,6 +284,70 @@ textarea{
 }
 .best-sales .row{
     margin-top: 80px;
+}
+.subscribe-form{
+    padding: 35px 45px;
+}
+.aside-section{
+    padding: 40px;
+}
+.aside-section+ .aside-section{
+    margin-top: 30px;
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"]+ label{
+    font-size: 16px;
+    color: #34404b;
+    cursor: pointer;
+    user-select: none;
+}
+input[type="checkbox"]+label::before{
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 4px solid #edf0f2;
+    background-color: #edf0f2;
+    margin-right: 13px;
+}
+input[type="checkbox"]:checked+label {
+    color: #ff5912;
+}
+input[type="checkbox"]:checked+label::before {
+    border-color: #ff5912;
+}
+.ui-widget.ui-widget-content{
+    border: none;
+    background-color: #edf0f2;
+    border-radius: 0;
+    height: 3px;
+}
+.add-range-value{
+    margin-top: 30px;
+}
+.ui-slider .ui-slider-range{
+    background-color: #34404b;
+}
+.min-value,
+.max-value{
+    position: absolute;
+    bottom: 200%;
+    color: #34404b;
+}
+.ui-widget-content .ui-state-default.ui-slider-handle{
+    width: 11px;
+    height: 11px;
+    background-color: #34404b;
+    border-radius: 50%;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+}
+.category-wrap .product-item{
+    margin-bottom: 30px;
 }
 /*DEFAULT COMPONENT END*/
 
@@ -467,9 +543,6 @@ textarea{
 .best-item-description ul li,.best-item-price{
     display: inline-block;
 }
-.best-item-description ul li:last-child{
- color: #f4f6f8;
-}
 .best-item-img{
     padding-right: 26px;
     border-right: 1px solid #eaedef;
@@ -498,4 +571,8 @@ textarea{
 }
 .best-item-title a:hover{
     color: #34404b ;
+}
+.category-wrap{
+    padding-top: 120px;
+    padding-bottom: 60px;
 }
