@@ -142,6 +142,40 @@ button{
 .icon {
     display: inline-block;
 }
+
+.btn{
+    padding: 17px 28px;
+    font-family: 'Harmonia_semibold';
+    font-size: 14px;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-align: center;
+    border: 0;
+}
+.btn-default{
+    color: #ffffff;
+    background-color: #ff5912;
+}
+.subscribe-description span{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #ff5912;
+    font-family: 'Harmonia_bold';
+}
+.subscribe-description span+span{
+    font-family: 'Harmonia_italic';
+    text-transform: none;
+    font-size: 14px;
+    color: inherit;
+    margin-left: 25px;
+}
+
+.subscribe-form form{
+    min-width: 414px;
+}
+.subscribe-form .input-description{
+    min-width: 158px;
+}
 /*DEFAULT-CLASSES END*/
 
 /*DEFAULT COMPONENT STAR*/
