@@ -618,3 +618,38 @@ input[type="checkbox"]:checked+label::before {
 .subscribe-form .btn{
     margin-left: 28px;
 }
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+}
+.footer-logo span{
+    font-size: 14px;
+    line-height: 2.14em;
+    color:#28313b;
+    margin-top: 7px;
+}
+footer{
+    padding: 84px 0;
+    margin-top: 60px;
+}
+.footer-nav ul{
+    list-style: unset;
+}
+.footer-nav ul li{
+    font-size: 14px;
+    line-height: 2.14em;
+}
+.footer-nav ul+ul{
+    margin-left: 100px;  /* короче по макету там отступ 70 и 130, я решил сделать по 100, ибо вместе это 200*/
+}
+.payment-methods ul{
+    margin-top: 20px;
+}
+.payment-methods-icon li+li{
+    margin-left: 10px;
+}
+.payment-methods span{
+    font-family: 'Harmonia_semibold';
+    font-size: 16px;
+    line-height: 1.87em;
+}
