@@ -383,6 +383,9 @@ input[type="checkbox"]:checked+label::before {
 .category-wrap .product-item{
     margin-bottom: 30px;
 }
+.category-wrap .load-more{
+    margin-bottom: 60px;
+}
 /*DEFAULT COMPONENT END*/
 
 .sale-carousel{
@@ -608,7 +611,6 @@ input[type="checkbox"]:checked+label::before {
 }
 .category-wrap{
     padding-top: 120px;
-    padding-bottom: 60px;
 }
 
 .subscribe-form .subscrible-input{
