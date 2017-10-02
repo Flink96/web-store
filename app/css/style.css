@@ -649,3 +649,11 @@ input[type="checkbox"]:checked+label::before {
     padding-top: 120px;
     padding-bottom: 60px;
 }
+
+.subscribe-form .subscrible-input{
+    min-width: 260px;
+    margin-left: 10px;
+}
+.subscribe-form .btn{
+    margin-left: 28px;
+}
