@@ -338,7 +338,7 @@ input[type="radio"]{
     display: none;
 }
 input[type="radio"]+ label{
-    font-size: 16px;
+    font-size: 14px;
     color: #34404b;
     cursor: pointer;
     user-select: none;
@@ -348,15 +348,6 @@ input[type="radio"]+ label{
 input[type="radio"]:checked+label {
     color: #ff5912;
 }
-input[type="radio"]+label::before{
-    content: '';
-    display: inline-block;
-    width: 13px;
-    height: 13px;
-    border: none;
-    margin-right: 13px;
-}
-
 input[type="checkbox"]+ label{
     font-size: 16px;
     color: #34404b;
@@ -701,4 +692,88 @@ footer{
     font-family: 'Harmonia_semibold';
     font-size: 16px;
     line-height: 1.87em;
+}
+/*product slider start*/
+.product-slider{
+    width: 330px;
+}
+.size-radio label{
+    font-size: 14px;
+    user-select: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.size-radio input[type="radio"]{
+    display: none;
+}
+.size-radio input[type="radio"]:checked + label{
+    color: #ff5912;
+    font-size: 18px;
+}
+.radio-list-btn .size-radio{
+    margin-left: 10px;
+}
+.size-radio+.size-radio:before{
+    content: "-";
+    margin-right: 10px;
+    font-size: 16px;
+}
+.choose-size span{
+    font-family: Harmonia_semibold;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.item-coutn span{
+    font-family: Harmonia_semibold;
+    font-size: 18px;
+    margin-right: 10px;
+}
+/*product slider end*/
+.product-description .sub-title-description p{
+    font-family: 'HarmoniaSansProCyr-SemiBd';
+    font-size: 18px;
+    line-height: 1.66em;
+    margin-bottom: 14px;
+}
+.product-description .sub-title-description p+p{
+    font-family: 'HarmoniaSansProCyr-Regular';
+    font-size: 16px;
+    line-height: 1.88em;
+    color: rgba(73,86,98, .8);
+    margin-bottom: 0;
+}
+.order-info{
+    padding: 72px 0;
+}
+.order-price{
+    font-family: Harmonia_black;
+    font-size: 20px;
+}
+.order-info .order-now .item-controls li{
+    display: inline-block;
+    padding-right: 25px;
+}
+.order-info .order-now .item-controls li a span:hover{
+    background-position: -44px -59px;
+}
+.order-info .order-now .item-controls li+li a span:hover{
+    background-position: -22px -38px;
+}
+.order-info .order-now .item-controls li+li+li a span:hover{
+    background-position: -38px -80px;
+}
+.order-info .order-now .item-controls {
+    margin-left: auto;
+}
+.order-now{
+    padding-top: 60px;
+    align-items: center;
+}
+.order-now .btn {
+    border-radius: 27px;
+    padding: 13px 23px;
+    font-size: 18px;
+}
+.new-arrivals-product .items-wrap{
+    margin-top: 80px;
 }
