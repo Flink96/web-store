@@ -74,6 +74,12 @@ $( function() {
     //formstyler init
     $('.input-quantity').styler();
 
+    //sliknav-init
+    $('.header-nav').slicknav({
+        appendTo:"header .bottom-header .flex-container",
+        label:''
+    });
+
 } );
 
 

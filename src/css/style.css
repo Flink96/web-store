@@ -207,6 +207,17 @@ button{
     padding: 0 20px;
     font: 16px "HarmoniaSansProCyr", sans-serif;
 }
+@media (max-width: 991px) {
+    header .bottom-header .header-nav{
+        display: none;
+    }
+    .slicknav_menu{
+        display: block;
+    }
+    .header .bottom-header .user-controls{
+        margin-left: 0;
+    }
+}
 .user-controls a{
     position: relative;
     display: inline-block;
@@ -506,12 +517,33 @@ input[type="checkbox"]:checked+label::before {
     position: absolute;
     bottom: 30px;
     left: 0;
-    padding: 0 50px;
+    width: 100%;
     z-index: -1;
+}
+@media(max-width: 1199px){
+    .product-item .item-description{
+        padding: 0;
+    }
+}
+@media (max-width: 991px) {
+    .product-item{
+        margin-bottom: 30px;
+    }
 }
 .kit{
     padding: 20px 60px;
     border: 1px solid #eaedef;
+}
+
+@media (max-width: 1199px) {
+    .kit{
+        padding: 20px 25px;
+    }
+}
+@media (max-width: 991px) {
+    .kit{
+        margin-bottom:  30px;
+    }
 }
 .sales-block{
     position: relative;
@@ -600,7 +632,6 @@ input[type="checkbox"]:checked+label::before {
     display: block;
 }
 .best-sales .best-items{
-    overflow: hidden;
     padding: 35px 25px;
 }
 .best-item-description{
@@ -611,6 +642,9 @@ input[type="checkbox"]:checked+label::before {
 .best-item-description .best-item-title {
     font-size: 18px;
     margin-bottom: 35px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .best-item-price{
     font-size: 16px;
@@ -624,6 +658,17 @@ input[type="checkbox"]:checked+label::before {
 }
 .best-items .best-item-description{
     position: relative;
+}
+@media (max-width: 1199px) {
+    .best-item-description{
+        padding-left: 10px;
+    }
+    .best-item-img{
+        padding-right: 10px;
+    }
+    .best-sales .best-items{
+        padding: 35px 20px;
+    }
 }
 .info-on-hover{
     opacity: 0;
@@ -650,13 +695,64 @@ input[type="checkbox"]:checked+label::before {
 .category-wrap{
     padding-top: 120px;
 }
-
+.mobile-side-bar-btn{
+    display: none;
+    font-size: 30px;
+    color: #ff5912;
+    margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+    .mobile-side-bar-btn {
+        display: block;
+    }
+    .mobile-side-bar-btn .fa{
+        transition: all .3s linear;
+    }
+    .mobile-sidebar-wrap{
+        position: absolute;
+        transform: translateX(-150%);
+        z-index: 99;
+        transition: all .3s linear;
+        left:0;
+        right: 0;
+    }
+    .overlay{
+        position: fixed;
+        top:0;
+        bottom: 0;
+        left:0;
+        right:0;
+        opacity:0;
+        z-index: -1;
+        background-color: rgba(0,0,0, .4);
+        transition: all .3s linear;
+    }
+    main.show .mobile-sidebar-wrap{
+        transform: translateX(0);
+    }
+    main.show .overlay{
+        opacity:1;
+        z-index: 98;
+    }
+    main.show .mobile-side-bar-btn .fa{
+        transform: rotate(-180deg);
+    }
+}
 .subscribe-form .subscrible-input{
     min-width: 260px;
     margin-left: 10px;
 }
 .subscribe-form .btn{
     margin-left: 28px;
+}
+@media (max-width: 991px) {
+    .subscribe-form{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .subscribe-description{
+        margin-bottom: 30px;
+    }
 }
 .footer-logo{
     display: flex;
@@ -681,6 +777,11 @@ footer{
 }
 .footer-nav ul+ul{
     margin-left: 100px;  /* короче по макету там отступ 70 и 130, я решил сделать по 100, ибо вместе это 200*/
+}
+@media (max-width: 1199px) {
+    .footer-nav ul+ul {
+        margin-left: 60px;
+    }
 }
 .payment-methods ul{
     margin-top: 20px;
