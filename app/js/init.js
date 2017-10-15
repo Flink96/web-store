@@ -76,7 +76,7 @@ $( function() {
 
     //sliknav-init
     $('.header-nav').slicknav({
-        appendTo:"header .bottom-header .flex-container",
+        appendTo:".header .bottom-header .flex-container",
         label:''
     });
 
