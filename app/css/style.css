@@ -562,6 +562,10 @@ input[type="checkbox"]:checked+label::before {
     .sale-carousel .item-carousel-description p+p{
         font-size: 14px;
     }
+    .sale-carousel{
+        min-height: auto;
+        padding: 40px 0;
+    }
 }
 .product-item:hover .item-title {
     color: #ff5912;
@@ -900,12 +904,15 @@ input[type="checkbox"]:checked+label::before {
     }
     .subscribe-form form{
         min-width: 270px;
+        margin-left: 30px;
     }
     .subscribe-form .subscrible-input{
         min-width: 100px;
     }
     .subscribe-form .btn{
-        margin-left: 20px;
+        margin-left: 10px;
+        padding: 13px 22px;
+        font-size: 11px;
     }
 }
 .footer-logo{
@@ -998,6 +1005,14 @@ footer{
 .product-slider{
     width: 330px;
 }
+@media (max-width: 479px) {
+    .product-slider{
+        width: 290px;
+    }
+    .slides li{
+        width: 308px;
+    }
+}
 .size-radio label{
     font-size: 14px;
     -webkit-user-select: none;
@@ -1082,6 +1097,33 @@ footer{
     padding: 13px 23px;
     font-size: 18px;
 }
+@media (max-width: 479px) {
+    .order-now .btn{
+        margin: auto;
+    }
+    .order-now{
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+    .order-now .order-price{
+        padding-right: 25px;
+    }
+}
+@media (max-width: 430px) {
+    .order-now .btn{
+        margin-top: 30px;
+    }
+}
 .new-arrivals-product .items-wrap{
     margin-top: 80px;
+}
+@media (max-width: 599px) {
+    #product-option-form{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
 }
